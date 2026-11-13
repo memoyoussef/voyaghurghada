@@ -1,0 +1,58 @@
+/* Individual excursion pages */
+.detail-page{background:#fff;color:#22211e}
+.detail-header{position:relative}
+.detail-nav{display:flex;align-items:center;gap:26px}
+.detail-nav a{font-size:11px;color:#282720}
+.detail-nav .nav-cta{padding:12px 16px;background:#1b1b18;color:#fff}
+.detail-breadcrumb{max-width:1180px;margin:0 auto;padding:24px 28px;color:#89857c;font-size:11px}
+.detail-breadcrumb a:hover{color:#a77a2d}.detail-breadcrumb b{color:#3b3933;font-weight:600}
+.detail-hero{height:490px;position:relative;overflow:hidden;background:#25231e}
+.detail-hero>img{width:100%;height:100%;object-fit:cover}
+.detail-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,15,14,.88),rgba(12,15,14,.48) 55%,rgba(12,15,14,.08))}
+.detail-hero-copy{position:absolute;left:max(7%,calc((100% - 1180px)/2));bottom:58px;max-width:720px;color:#fff}
+.detail-hero-copy .eyebrow{color:#e5c47d;font-size:10px;letter-spacing:.18em;font-weight:700}
+.detail-hero-copy h1{font:600 clamp(36px,5vw,60px)/1.08 "Playfair Display",Georgia,serif;margin:18px 0}
+.detail-hero-copy>p:not(.eyebrow){max-width:650px;font-size:15px;line-height:1.8;color:#eee}
+.detail-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.detail-pills span{padding:9px 13px;border:1px solid #ffffff55;background:#ffffff18;font-size:10px}
+.detail-layout{max-width:1180px;margin:0 auto;padding:64px 28px 80px;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:65px;align-items:start}
+.detail-section{padding:0 0 42px;margin:0 0 40px;border-bottom:1px solid #e9e6df}
+.detail-kicker{font-size:9px;letter-spacing:.18em;font-weight:700;color:#a27a36;margin:0 0 12px}
+.detail-section h2,.related-excursions h2{font:600 31px/1.2 "Playfair Display",Georgia,serif;margin:0 0 18px;color:#24231f}
+.detail-lead{font-size:15px;line-height:1.95;color:#68645c;max-width:760px}
+.highlight-list{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:14px 22px}
+.highlight-list li{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.6;color:#4f4b43}
+.highlight-list li span{color:#a77a2d;font-weight:800}
+.timeline{margin-top:25px;border-left:1px solid #d8c49b;padding-left:24px}
+.timeline-item{position:relative;display:grid;grid-template-columns:44px 1fr;gap:12px;padding:0 0 25px}
+.timeline-item:before{content:"";position:absolute;left:-29px;top:6px;width:9px;height:9px;border-radius:50%;background:#b78c43;border:3px solid #f4eee2}
+.timeline-number{font-size:11px;color:#a77a2d;font-weight:700;letter-spacing:.08em}
+.timeline-item h3{font-size:15px;margin:0 0 5px;color:#292720}
+.timeline-item p{font-size:12px;line-height:1.8;color:#777168;margin:0}
+.detail-disclaimer{padding:13px 16px;background:#f8f6f1;color:#79746a;font-size:10px;line-height:1.7}
+.practical-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.practical-grid>div{padding:16px;background:#f8f6f1;display:flex;flex-direction:column;gap:7px}
+.practical-grid b{font-size:10px;color:#8b8477;text-transform:uppercase;letter-spacing:.08em}
+.practical-grid span{font-size:12px;color:#333}
+.confirm-note{margin-top:15px;padding:18px;border:1px solid #e9e1d2}
+.confirm-note strong{font-size:12px;color:#7d5c29}
+.confirm-note p{font-size:11px;line-height:1.8;color:#777;margin:7px 0 0}
+.faq details{border-top:1px solid #e8e5de;padding:16px 0}
+.faq details:last-child{border-bottom:1px solid #e8e5de}
+.faq summary{font-size:13px;font-weight:700;cursor:pointer;color:#333}
+.faq details p{font-size:12px;line-height:1.8;color:#777;margin:12px 0 0}
+.detail-booking{position:relative}
+.booking-sticky{position:sticky;top:25px;padding:26px;border:1px solid #e7e2d8;box-shadow:0 15px 40px #2a24120c}
+.booking-sticky h2{font:600 21px/1.3 "Playfair Display",Georgia,serif;margin:0 0 20px}
+.detail-price-label{font-size:10px;color:#777;margin:0}
+.detail-price{font:600 37px "Playfair Display",Georgia,serif;color:#a77a2d;margin:0 0 20px}
+.booking-facts{display:grid;gap:10px;padding:16px 0;border-top:1px solid #eee9df;border-bottom:1px solid #eee9df;color:#676258;font-size:11px}
+.detail-book-button{display:block;text-align:center;margin-top:20px;padding:15px 12px}
+.detail-email{display:block;text-align:center;margin-top:14px;font-size:11px;color:#987033;text-decoration:underline}
+.booking-small{font-size:9px;line-height:1.7;color:#8a857b;margin:18px 0 0}
+.related-excursions{max-width:1180px;margin:0 auto 80px;padding:35px 28px;background:#f7f5ef;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.related-excursions h2{font-size:25px;margin:0}
+.detail-error{text-align:center;padding:110px 20px}.detail-error h1{font:600 38px "Playfair Display",Georgia,serif}.detail-error p{color:#777;margin:15px 0 25px}
+.detail-loading{text-align:center;padding:120px 20px;color:#777}
+@media(max-width:850px){.detail-layout{grid-template-columns:1fr;gap:20px;padding-top:42px}.detail-booking{grid-row:1}.booking-sticky{position:static}.detail-hero{height:440px}.detail-nav{gap:12px}.detail-nav a{font-size:9px}}
+@media(max-width:600px){.detail-header{padding:0 5%}.detail-nav{display:none}.detail-breadcrumb{padding:18px 6%;font-size:9px}.detail-hero{height:480px}.detail-hero-copy{left:6%;right:6%;bottom:30px}.detail-hero-copy h1{font-size:39px}.detail-hero-copy>p:not(.eyebrow){font-size:12px}.detail-pills{gap:6px}.detail-pills span{font-size:8px;padding:7px 9px}.detail-layout{padding:35px 6% 55px}.detail-section h2{font-size:27px}.detail-lead{font-size:13px}.highlight-list{grid-template-columns:1fr;gap:10px}.practical-grid{grid-template-columns:1fr 1fr}.related-excursions{margin:0 6% 55px;padding:25px;align-items:flex-start;flex-direction:column}.related-excursions h2{font-size:22px}}

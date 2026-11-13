@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="Découvrez l'Égypte avec VoyagHurghada : excursions à Hurghada, au Caire et à Louxor, sorties en mer Rouge et safaris dans le désert. Demandez votre réservation.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="VoyagHurghada">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VoyagHurghada">
+  <meta property="og:title" content="VoyagHurghada — Explorez l'Égypte autrement">
+  <meta property="og:description" content="Mer Rouge, désert et trésors des pharaons. Organisez votre prochaine expérience en Égypte.">
+  <meta property="og:locale" content="fr_FR">
+  <title>VoyagHurghada | Excursions et circuits en Égypte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="topline"><span data-i18n="topline">Votre prochaine aventure commence en Égypte</span><a href="mailto:info@voyaghurghada.com">info@voyaghurghada.com</a></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="VoyagHurghada accueil"><span class="brand-mark">V</span><span>VOYAG<span class="gold">HURGHADA</span><small>EGYPT EXPERIENCES</small></span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#destinations" data-i18n="navDest">Destinations</a>
+      <a href="#excursions" data-i18n="navTrips">Excursions</a>
+      <a href="#circuits" data-i18n="navCircuits">Circuits</a>
+      <a href="#about" data-i18n="navAbout">À propos</a>
+      <a href="#booking" class="nav-cta" data-i18n="navBooking">Réserver</a>
+    </nav>
+    <label class="language-select"><span class="sr-only">Language</span>
+      <select id="language-select" aria-label="Choisir la langue">
+        <option value="fr">FR</option><option value="en">EN</option><option value="de">DE</option>
+      </select>
+    </label>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span><span data-i18n="heroEyebrow">DES EXPÉRIENCES AUTHENTIQUES</span></p>
+        <h1 data-i18n="heroTitle">L'Égypte vous attend.<br><em>Vivez-la pleinement.</em></h1>
+        <p class="hero-copy" data-i18n="heroCopy">Des eaux turquoise de la mer Rouge aux temples millénaires, découvrez l'Égypte à votre rythme.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#excursions" data-i18n="heroButton">Explorer les excursions <span>↗</span></a>
+          <a class="text-link" href="#destinations" data-i18n="heroSecondary">Découvrir les destinations <span>↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span data-i18n="heroNote">Hurghada · Le Caire · Louxor · Mer Rouge</span></div>
+      </div>
+      <div class="hero-index"><span>01</span><i></i><span>04</span></div>
+    </section>
+
+    <section class="trust-strip" aria-label="Nos engagements">
+      <div><b>✦</b><span data-i18n="trust1">Expériences soigneusement choisies</span></div>
+      <div><b>◈</b><span data-i18n="trust2">Contact direct et accompagnement</span></div>
+      <div><b>◎</b><span data-i18n="trust3">Confirmation avant réservation</span></div>
+    </section>
+
+    <section class="section destinations-section" id="destinations">
+      <div class="section-heading">
+        <div><p class="eyebrow dark"><span></span><span data-i18n="destEyebrow">EXPLOREZ L'ÉGYPTE</span></p><h2 data-i18n="destTitle">Des lieux qui racontent<br><em>mille histoires.</em></h2></div>
+        <p class="section-intro" data-i18n="destIntro">Choisissez votre prochaine escale et laissez-vous surprendre par les paysages, la culture et l'hospitalité égyptienne.</p>
+      </div>
+      <div class="destination-grid">
+        <a href="#excursions" class="destination-card destination-large" data-destination="Hurghada"><img src="images/hurghada.jpg" alt="Mer Rouge et plages de Hurghada" loading="lazy"><span class="destination-overlay"></span><span class="destination-label"><small>01 / RED SEA</small><strong>Hurghada</strong><i>↗</i></span></a>
+        <a href="#excursions" class="destination-card" data-destination="Le Caire"><img src="images/cairo.jpg" alt="Pyramides de Gizeh au Caire" loading="lazy"><span class="destination-overlay"></span><span class="destination-label"><small>02 / HISTORY</small><strong>Le Caire</strong><i>↗</i></span></a>
+        <a href="#excursions" class="destination-card" data-destination="Louxor"><img src="images/luxor.jpg" alt="Temples antiques de Louxor" loading="lazy"><span class="destination-overlay"></span><span class="destination-label"><small>03 / ANTIQUITY</small><strong>Louxor</strong><i>↗</i></span></a>
+        <a href="#excursions" class="destination-card" data-destination="Marsa Alam"><img src="images/marsa-alam.jpg" alt="Vie marine à Marsa Alam" loading="lazy"><span class="destination-overlay"></span><span class="destination-label"><small>04 / NATURE</small><strong>Marsa Alam</strong><i>↗</i></span></a>
+        <a href="#excursions" class="destination-card" data-destination="Assouan"><img src="images/assouan.jpg" alt="Temple de Philae à Assouan" loading="lazy"><span class="destination-overlay"></span><span class="destination-label"><small>05 / NILE</small><strong>Assouan</strong><i>↗</i></span></a>
+      </div>
+    </section>
+
+    <section class="section experiences-section" id="excursions">
+      <div class="section-heading">
+        <div><p class="eyebrow dark"><span></span><span data-i18n="tripsEyebrow">CHOISISSEZ VOTRE AVENTURE</span></p><h2 data-i18n="tripsTitle">Nos excursions<br><em>incontournables.</em></h2></div>
+        <p class="section-intro" data-i18n="tripsIntro">Une sélection d'expériences pour découvrir la mer, le désert et les grands sites historiques d'Égypte.</p>
+      </div>
+      <div class="filter-panel">
+        <label><span data-i18n="filterDestination">Destination</span><select id="destination"><option value="">Toutes les destinations</option><option>Hurghada</option><option>Le Caire</option><option>Louxor</option><option>Marsa Alam</option><option>Assouan</option><option>Orange Bay</option><option>Hula Hula Island</option><option>Île Paradise</option><option>Mer Rouge</option><option>Le Caire & Louxor</option></select></label>
+        <label><span data-i18n="filterCategory">Catégorie</span><select id="category"><option value="">Toutes les catégories</option><option>Mer & snorkeling</option><option>Safari & désert</option><option>Excursions culturelles</option><option>Circuits privés</option></select></label>
+        <label class="keyword-field"><span data-i18n="filterKeyword">Recherche</span><input type="search" id="search" placeholder="Rechercher une excursion..."></label>
+        <button type="button" class="button button-dark" id="search-button" data-i18n="filterButton">Rechercher ↗</button>
+      </div>
+      <div class="results-bar"><p id="results-count" aria-live="polite"></p><button id="reset-search" type="button" class="reset-button" data-i18n="reset">Effacer les filtres</button></div>
+      <div id="trip-container" class="trip-grid"></div>
+    </section>
+
+    <section class="category-band">
+      <div class="category-band-heading"><p class="eyebrow"><span></span><span data-i18n="categoryEyebrow">TROUVEZ VOTRE STYLE</span></p><h2 data-i18n="categoryTitle">L'aventure prend<br><em>plusieurs formes.</em></h2></div>
+      <div class="category-links">
+        <button data-category="Mer & snorkeling"><span>01</span><b data-i18n="catSea">Mer & snorkeling</b><i>↗</i></button>
+        <button data-category="Safari & désert"><span>02</span><b data-i18n="catDesert">Safari & désert</b><i>↗</i></button>
+        <button data-category="Excursions culturelles"><span>03</span><b data-i18n="catCulture">Culture & histoire</b><i>↗</i></button>
+      </div>
+    </section>
+
+
+    <section class="section flight-feature-section" id="cairo-flights">
+      <div class="feature-banner flight-banner">
+        <div class="feature-banner-copy"><span class="feature-pill">✈ PROGRAMMES AU DÉPART DE HURGHADA</span><span class="feature-price">À partir de 280 €</span><h2>Le Caire en avion depuis Hurghada</h2><p>Comparez les formules de visite du Caire : départ matinal, départ plus tardif ou circuit combiné avec Louxor. Les horaires et prestations sont confirmés avant réservation.</p><a href="#excursions" class="button button-light">Voir les programmes ↗</a></div>
+      </div>
+      <h3 class="subsection-title">Nos formules populaires pour Le Caire en avion</h3>
+      <div class="offer-grid three-offers">
+        <article class="offer-card"><img src="images/cairo-pyramids.jpg" alt="Pyramides de Gizeh"><div><h4>Le Caire en avion — départ matinal</h4><p class="offer-price">À partir de <strong>285 €</strong></p><a href="trip.html?id=10" class="button button-gold">Détails ↗</a></div></article>
+        <article class="offer-card"><img src="images/cairo-plane.jpg" alt="Pyramides et avion"><div><h4>Le Caire en avion — départ tardif</h4><p class="offer-price">À partir de <strong>305 €</strong></p><a href="trip.html?id=11" class="button button-gold">Détails ↗</a></div></article>
+        <article class="offer-card"><img src="images/luxor-karnak.jpg" alt="Temple de Louxor"><div><h4>Le Caire & Louxor en avion — 2 jours</h4><p class="offer-price">À partir de <strong>459 €</strong></p><a href="trip.html?id=12" class="button button-gold">Détails ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="section speedboat-section" id="speedboat">
+      <div class="section-heading"><div><p class="eyebrow dark"><span></span>NOUVELLES EXPÉRIENCES EN MER</p><h2>Snorkeling avec <em>speed boat privé.</em></h2><p>Des sorties en bateau rapide au départ de Hurghada, avec différentes destinations proposées.</p></div><a href="#excursions" class="text-link">Toutes les excursions ↗</a></div>
+      <div class="speedboat-panel">
+        <div class="speedboat-intro"><span class="feature-pill blue-pill">NOUVEAU</span><h3>Choisissez votre destination en mer Rouge</h3><p>Les horaires, la durée, le nombre de participants et les prestations incluses sont confirmés avec l’équipe avant le départ.</p></div>
+        <div class="speedboat-list">
+          <article class="speedboat-item"><img src="images/orange-bay-speedboat.jpg" alt="Speed boat privé en mer Rouge"><div><h4>Île Paradise en speed boat privé & snorkeling</h4><strong>44 € <small>par personne</small></strong></div><a href="trip.html?id=13">Détails ↗</a></article>
+          <article class="speedboat-item"><img src="images/red-sea-dolphins.jpg" alt="Sortie dauphins en bateau"><div><h4>Sortie dauphins en speed boat privé</h4><strong>36 € <small>par personne</small></strong></div><a href="trip.html?id=14">Détails ↗</a></article>
+          <article class="speedboat-item"><img src="images/orange-bay-speedboat.jpg" alt="Orange Bay"><div><h4>Orange Bay en speed boat privé</h4><strong>36 € <small>par personne</small></strong></div><a href="trip.html?id=15">Détails ↗</a></article>
+          <article class="speedboat-item"><img src="images/red-sea-snorkeling.jpg" alt="Hula Hula Island"><div><h4>Île de Hula Hula en speed boat privé</h4><strong>36 € <small>par personne</small></strong></div><a href="trip.html?id=16">Détails ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roundtrips-section" id="roundtrips">
+      <div class="section-heading"><div><p class="eyebrow dark"><span></span>VOYAGES MULTI-JOURS</p><h2>Circuits privés en Égypte <em>et croisière sur le Nil.</em></h2><p>Combinez Le Caire, Louxor et Assouan dans un itinéraire de plusieurs jours. Les circuits sont préparés sur demande selon vos dates et vos préférences.</p></div></div>
+      <div class="roundtrip-grid">
+        <article class="roundtrip-card"><img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=1200&q=85" alt="Mosquée historique au Caire" loading="lazy"><span class="roundtrip-days">7 jours</span><span class="roundtrip-price">Dès 1 575 €</span><div><h3>Égypte en 7 jours — Le Caire, croisière sur le Nil, Louxor & Assouan</h3><p>Un itinéraire multi-jours pour associer les grands sites historiques et une découverte du Nil.</p><a href="https://wa.me/201285248835?text=Bonjour%20VoyagHurghada%2C%20je%20souhaite%20des%20informations%20sur%20le%20circuit%20de%207%20jours%20%C3%A0%201575%20euros." target="_blank" rel="noopener">Voir l’itinéraire ↗</a></div></article>
+        <article class="roundtrip-card"><img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85" alt="Pyramides d'Égypte" loading="lazy"><span class="roundtrip-days">11 jours</span><span class="roundtrip-price">Dès 2 520 €</span><div><h3>Grand circuit d’Égypte en 11 jours</h3><p>Un séjour plus long pour prendre le temps de découvrir plusieurs régions du pays.</p><a href="https://wa.me/201285248835?text=Bonjour%20VoyagHurghada%2C%20je%20souhaite%20des%20informations%20sur%20le%20circuit%20de%2011%20jours%20%C3%A0%202520%20euros." target="_blank" rel="noopener">Voir l’itinéraire ↗</a></div></article>
+        <article class="roundtrip-card"><img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=1200&q=85" alt="Temple antique d'Égypte" loading="lazy"><span class="roundtrip-days">14 jours</span><span class="roundtrip-price">Sur demande</span><div><h3>Voyage privé en Égypte en 14 jours</h3><p>Un circuit personnalisable. Le tarif de 14 jours n’apparaît pas dans les références fournies : demandez un devis.</p><a href="https://wa.me/201285248835?text=Bonjour%20VoyagHurghada%2C%20je%20souhaite%20un%20devis%20pour%20un%20circuit%20priv%C3%A9%20de%2014%20jours." target="_blank" rel="noopener">Demander un devis ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="section departure-section">
+      <div class="section-heading"><div><p class="eyebrow dark"><span></span>DESTINATIONS & POINTS DE DÉPART</p><h2>Explorez les villes <em>d’Égypte.</em></h2><p>Découvrez les grands sites et contactez-nous pour vérifier les possibilités de départ, de transfert et d’itinéraire selon votre lieu de séjour.</p></div></div>
+      <div class="departure-chips"><a href="#destinations">Hurghada</a><a href="#destinations">El Gouna</a><a href="#destinations">Makadi Bay</a><a href="#destinations">Safaga</a><a href="#destinations">Marsa Alam</a><a href="#destinations">Le Caire</a><a href="#destinations">Louxor</a><a href="#destinations">Assouan</a></div>
+    </section>
+
+    <section class="benefits-band">
+      <div class="benefit-item"><span class="benefit-icon">◇</span><h3>Tarifs transparents</h3><p>Les prix affichés sont des prix de départ. Les prestations et éventuels frais sont détaillés avant confirmation.</p></div>
+      <div class="benefit-item"><span class="benefit-icon">◷</span><h3>Du temps pour découvrir</h3><p>Choisissez une formule adaptée à votre programme et demandez un rythme personnalisé lorsque c’est possible.</p></div>
+      <div class="benefit-item"><span class="benefit-icon">✧</span><h3>Un programme adapté</h3><p>Faites-nous part de vos envies : nous vérifierons les options disponibles pour votre excursion ou circuit.</p></div>
+    </section>
+
+    <section class="section longform-section">
+      <p class="eyebrow dark"><span></span>PRÉPARER VOTRE VOYAGE</p><h2>Les excursions en Égypte : <em>mer, désert et histoire.</em></h2>
+      <p>Les excursions en Égypte permettent de découvrir des paysages très différents au cours d’un même séjour. Depuis la côte de la mer Rouge, Hurghada et ses environs offrent des sorties en bateau, des journées de snorkeling et des activités dans le désert. Les voyageurs qui souhaitent découvrir l’histoire du pays peuvent envisager une excursion au Caire pour visiter le plateau de Gizeh, ou une journée à Louxor consacrée aux temples et aux monuments de l’ancienne Thèbes.</p>
+      <p>Pour un séjour plus long, il est possible d’étudier un circuit combinant plusieurs destinations, notamment Le Caire, Louxor et Assouan, ainsi qu’une croisière sur le Nil. Les itinéraires, les moyens de transport, les hébergements et les visites dépendent du programme demandé et des disponibilités au moment de la réservation.</p>
+      <h3>Pourquoi choisir une excursion organisée à votre rythme ?</h3>
+      <p>Une excursion bien préparée vous aide à connaître à l’avance les grandes étapes de la journée, la durée prévue, le lieu de rendez-vous et les prestations comprises. Avant de confirmer, demandez toujours le détail des transferts, billets d’entrée, repas, équipements, langues du guide et éventuels suppléments. Notre équipe peut vous renseigner par WhatsApp et vous transmettre les conditions correspondant à la formule choisie.</p>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-heading centered"><div><p class="eyebrow dark"><span></span>VOUS AVEZ DES QUESTIONS ?</p><h2>Questions fréquentes <em>sur les excursions.</em></h2></div></div>
+      <div class="faq-list">
+        <details><summary>Combien coûte une excursion en Égypte ?</summary><p>Les prix dépendent de la destination, du transport et des prestations. Sur ce site, les tarifs sont indiqués « à partir de ». Par exemple, les formules speed boat privées affichées commencent à 36 € par personne, tandis que l’excursion au Caire en avion commence à 280 €. Le prix final est confirmé avant réservation.</p></details>
+        <details><summary>Les excursions sont-elles privées ou en groupe ?</summary><p>Le type de prestation dépend de l’excursion choisie. Les offres mentionnées comme privées sont identifiées sur leur fiche. Demandez confirmation du type de véhicule ou de bateau et du nombre de participants avant de réserver.</p></details>
+        <details><summary>Comment réserver une excursion ?</summary><p>Utilisez le bouton de demande sur la fiche de l’excursion ou contactez-nous sur WhatsApp. Indiquez la date souhaitée et le nombre de participants ; nous vous confirmerons la disponibilité et le tarif final.</p></details>
+        <details><summary>Le transfert depuis l’hôtel est-il inclus ?</summary><p>Les conditions de prise en charge varient selon l’offre et l’hôtel. Le point de rendez-vous, les transferts et les éventuels suppléments doivent être confirmés avant la réservation.</p></details>
+        <details><summary>Quelles langues sont disponibles pour les guides ?</summary><p>La langue du guide dépend de l’excursion et des disponibilités. Indiquez votre langue souhaitée lors de la demande pour que nous puissions la vérifier.</p></details>
+        <details><summary>Qu’est-ce qui est inclus dans le prix ?</summary><p>Les inclusions varient selon la formule. Demandez le détail des transferts, billets d’entrée, repas, boissons, équipement, taxes et éventuels frais supplémentaires avant de confirmer.</p></details>
+      </div>
+      <a class="faq-more" href="https://wa.me/201285248835?text=Bonjour%20VoyagHurghada%2C%20j%27ai%20une%20question%20sur%20vos%20excursions." target="_blank" rel="noopener">Une autre question ? Contactez-nous ↗</a>
+    </section>
+
+    <section class="section circuits-section" id="circuits">
+      <div class="circuit-image"><img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=1200&q=85" alt="Temple égyptien antique" loading="lazy"><span class="image-caption">THE LAND OF PHARAOHS</span></div>
+      <div class="circuit-content"><p class="eyebrow dark"><span></span><span data-i18n="circuitEyebrow">AU-DELÀ D'UNE SIMPLE EXCURSION</span></p><h2 data-i18n="circuitTitle">L'Égypte, à votre<br><em>propre rythme.</em></h2><p data-i18n="circuitCopy">Vous souhaitez combiner plusieurs villes ou imaginer un séjour sur mesure ? Parlons de votre projet : nous vous aiderons à préparer votre découverte de l'Égypte.</p><a class="button button-gold" href="https://wa.me/201285248835" target="_blank" rel="noopener" data-i18n="circuitButton">Créer mon circuit <span>↗</span></a></div>
+    </section>
+
+    <section class="about-band" id="about">
+      <div class="about-number">VH<span>.</span></div><div><p class="eyebrow"><span></span><span data-i18n="aboutEyebrow">L'ESPRIT VOYAGHURGHADA</span></p><h2 data-i18n="aboutTitle">Plus qu'un voyage,<br><em>un souvenir à emporter.</em></h2></div><p data-i18n="aboutCopy">Notre objectif : vous aider à découvrir les multiples visages de l'Égypte grâce à des excursions variées et un contact simple et direct.</p>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="booking-copy"><p class="eyebrow dark"><span></span><span data-i18n="bookingEyebrow">PRÊT À PARTIR ?</span></p><h2 data-i18n="bookingTitle">Votre prochaine<br><em>histoire commence ici.</em></h2><p data-i18n="bookingCopy">Envoyez-nous votre demande. Nous vous contacterons pour confirmer les disponibilités et le prix final avant toute réservation.</p><div class="contact-lines"><a href="https://wa.me/201285248835" target="_blank" rel="noopener">WhatsApp&nbsp; +20 12 8524 8835 ↗</a><a href="mailto:info@voyaghurghada.com">info@voyaghurghada.com ↗</a></div></div>
+      <form id="booking-form" class="booking-form">
+        <div class="form-row"><label><span data-i18n="formName">Nom complet</span><input name="name" autocomplete="name" required placeholder="Votre nom"></label><label><span data-i18n="formEmail">Adresse e-mail</span><input name="email" type="email" autocomplete="email" required placeholder="nom@exemple.com"></label></div>
+        <div class="form-row"><label><span data-i18n="formPhone">Téléphone / WhatsApp</span><input name="phone" autocomplete="tel" required placeholder="+33 ..."></label><label><span data-i18n="formTrip">Excursion souhaitée</span><select name="trip" id="trip-select" required><option value="">Choisir une excursion</option></select></label></div>
+        <div class="form-row"><label><span data-i18n="formDate">Date souhaitée</span><input name="date" type="date" required></label><label><span data-i18n="formPeople">Nombre de personnes</span><input name="people" type="number" min="1" value="2" required></label></div>
+        <label><span data-i18n="formMessage">Votre message (facultatif)</span><textarea name="message" rows="3" placeholder="Dites-nous ce que vous avez en tête..."></textarea></label>
+        <button type="submit" class="button button-dark submit-button" data-i18n="formSubmit">Envoyer ma demande sur WhatsApp ↗</button>
+        <small data-i18n="formNote">Aucun paiement en ligne. Votre demande sera confirmée directement avec notre équipe.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="#"><span class="brand-mark">V</span><span>VOYAG<span class="gold">HURGHADA</span><small>EGYPT EXPERIENCES</small></span></a><p data-i18n="footerText">La beauté de l'Égypte, une expérience à la fois.</p><div class="footer-social"><a href="https://wa.me/201285248835" target="_blank" rel="noopener">WhatsApp ↗</a><a href="mailto:info@voyaghurghada.com">E-mail ↗</a></div></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> VoyagHurghada. <span data-i18n="rights">Tous droits réservés.</span></span><span>EGYPT · RED SEA · CULTURE</span></div>
+  </footer>
+  <a class="floating-whatsapp" href="https://wa.me/201285248835" target="_blank" rel="noopener noreferrer" aria-label="Contacter VoyagHurghada sur WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94.1-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.4-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.7 184.6-186.5 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.7-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.4 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.7 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.7z"/></svg></a>
+</body>
+</html>
