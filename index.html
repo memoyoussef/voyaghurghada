@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Excursions à Hurghada, au Caire et à Louxor | VoyagHurghada</title>
+
+  <meta name="description" content="Découvrez nos excursions en Égypte : sorties en mer Rouge, safaris dans le désert, visites du Caire et de Louxor. Explorez l'Égypte avec VoyagHurghada.">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="author" content="VoyagHurghada">
+
+  <meta name="theme-color" content="#111111">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VoyagHurghada">
+  <meta property="og:title" content="VoyagHurghada | Excursions en Égypte">
+  <meta property="og:description" content="Découvrez les meilleures excursions en Égypte : Hurghada, Le Caire, Louxor, safaris et sorties en mer.">
+
+  <meta property="og:locale" content="fr_FR">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header>
+  <a href="#" class="logo">VOYAG<span>HURGHADA</span></a>
+
+  <nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#excursions">Excursions</a>
+    <a href="#circuits">Circuits</a>
+    <a href="#booking">Réservation</a>
+  </nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-content">
+    <span>DÉCOUVREZ L'ÉGYPTE AUTREMENT</span>
+
+    <h1>
+      Des expériences
+      <em>inoubliables</em>
+      en Égypte
+    </h1>
+
+    <p>
+      De la mer Rouge aux trésors des pharaons,
+      trouvez l'excursion qui vous ressemble.
+    </p>
+
+    <a href="#excursions" class="btn">
+      Explorer les excursions →
+    </a>
+  </div>
+</section>
+
+<section class="search-section">
+  <h2>Trouvez votre prochaine excursion</h2>
+
+  
+<div class="search-box">
+
+    <select id="destination" aria-label="Choisir une destination">
+      <option value="">Toutes les destinations</option>
+      <option value="Hurghada">Hurghada</option>
+      <option value="Le Caire">Le Caire</option>
+      <option value="Louxor">Louxor</option>
+      <option value="Marsa Alam">Marsa Alam</option>
+    </select>
+
+    <select id="category" aria-label="Choisir une catégorie">
+      <option value="">Toutes les catégories</option>
+      <option value="Mer & snorkeling">Mer & snorkeling</option>
+      <option value="Safari & désert">Safari & désert</option>
+      <option value="Excursions culturelles">Excursions culturelles</option>
+    </select>
+
+    <input
+      type="search"
+      id="search"
+      placeholder="Rechercher une excursion..."
+      aria-label="Rechercher une excursion"
+    >
+
+    <button type="button" id="search-button">
+      Rechercher
+    </button>
+
+</div>
+
+</section>
+
+<section id="destinations">
+  <span class="subtitle">EXPLOREZ LE PAYS</span>
+  <h2>Nos destinations</h2>
+
+  
+<div class="destination-grid">
+
+    <article class="destination-card">
+        <img src="images/hurghada.jpg" alt="Plages et mer Rouge à Hurghada">
+        <h3>Hurghada</h3>
+    </article>
+
+    <article class="destination-card">
+        <img src="images/cairo.jpg" alt="Pyramides de Gizeh au Caire">
+        <h3>Le Caire</h3>
+    </article>
+
+    <article class="destination-card">
+        <img src="images/luxor.jpg" alt="Temples antiques de Louxor">
+        <h3>Louxor</h3>
+    </article>
+
+    <article class="destination-card">
+        <img src="images/marsa-alam.jpg" alt="Tortue marine à Marsa Alam">
+        <h3>Marsa Alam</h3>
+    </article>
+
+    <article class="destination-card">
+        <img src="images/assouan.jpg" alt="Temple de Philae à Assouan">
+        <h3>Assouan</h3>
+    </article>
+
+</div>
+
+</section>
+
+<section id="excursions" class="excursions-section">
+  <span class="subtitle">À VOUS DE CHOISIR</span>
+  <h2>Nos excursions populaires</h2>
+
+  <div id="trip-container" class="trip-grid"></div>
+</section>
+
+<section id="circuits" class="circuits">
+  <h2>Découvrez l'Égypte en profondeur</h2>
+
+  <p>
+    Combinez Le Caire, Louxor, Assouan et
+    les plus beaux paysages de l'Égypte.
+  </p>
+
+  <a href="#booking" class="btn">
+    Organiser mon voyage
+  </a>
+</section>
+
+<section id="booking">
+  <span class="subtitle">VOTRE AVENTURE COMMENCE ICI</span>
+  <h2>Demandez votre réservation</h2>
+
+  <p>
+    Envoyez votre demande et nous vous contacterons
+    pour confirmer la disponibilité et le prix final.
+  </p>
+
+  <form id="booking-form">
+
+    <input name="name" placeholder="Nom complet" required>
+
+    <input name="email" type="email"
+      placeholder="Adresse e-mail" required>
+
+    <input name="phone"
+      placeholder="Téléphone / WhatsApp" required>
+
+    <select name="trip" id="trip-select" required>
+      <option value="">Choisir une excursion</option>
+    </select>
+
+    <input name="date" type="date" required>
+
+    <input name="people" type="number"
+      min="1" value="2" required>
+
+    <textarea name="message"
+      placeholder="Votre message"></textarea>
+
+    <button class="btn" type="submit">
+      Envoyer ma demande
+    </button>
+
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <h2>VOYAGHURGHADA</h2>
+  <p>Excursions et circuits en Égypte</p>
+
+  <a href="https://wa.me/201285248835">
+    WhatsApp : +20 12 8524 8835
+  </a>
+<p>
+    <a href="mailto:info@voyaghurghada.com">
+        info@voyaghurghada.com
+    </a>
+</p>
+  <p>© 2026 VoyagHurghada</p>
+</footer>
+<script src="app.js"></script>
+
+<a
+    href="https://wa.me/201285248835"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactez-nous sur WhatsApp"
+    style="
+        position: fixed !important;
+        right: 25px !important;
+        bottom: 25px !important;
+        width: 65px !important;
+        height: 65px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #25D366 !important;
+        color: white !important;
+        border-radius: 50% !important;
+        font-size: 32px !important;
+        text-decoration: none !important;
+        z-index: 999999 !important;
+        box-shadow: 0 5px 20px rgba(0,0,0,.3) !important;
+    "
+>
+    
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512"
+    width="38"
+    height="42"
+    aria-hidden="true"
+>
+    <path
+        fill="white"
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94.1-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.4-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.7 184.6-186.5 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.7-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.4 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.7 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.7z"
+    />
+</svg>
+
+</a>
+
+</body>
+</html>
